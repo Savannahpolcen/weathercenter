@@ -25,24 +25,54 @@
         <h3 class="card-header text-uppercase">Search for a city</h3>
         <form id="user-form" class="card-body">
         
-          <input name="username" id="username" type="text" autofocus="true" class="form-input" />
-          <button type="submit" class="btn">Search</button>
+          <input name="username" id="search-city" type="text" autofocus="true" class="form-input" />
+          <button type="submit" class="btn" id="search-button">Search</button>
         </form>
       </div>
 
       <div class="card">
         
         <div id="city-buttons" class="card-body">
-          <button data-language="Austin" class="btn">Austin</button>
-          <button data-language="Chicago" class="btn">Chicago</button>
-          <button data-language="New York" class="btn">New York</button>
-          <button data-language="Orlando" class="btn">Orlando</button>
-          <button data-language="San Francisco" class="btn">San Francisco</button>
-          <button data-language="Seattle" class="btn">Seattle</button>
-          <button data-language="Denver" class="btn">Denver</button>
+          <button cityName="Austin" class="btn">Austin</button>
+          <button cityName="Chicago" class="btn">Chicago</button>
+          <button cityName="New York" class="btn">New York</button>
+          <button cityName="Orlando" class="btn">Orlando</button>
+          <button cityName="San Francisco" class="btn">San Francisco</button>
+          <button cityName="Seattle" class="btn">Seattle</button>
+          <button cityName="Denver" class="btn">Denver</button>
         </div>
       </div>
     </div>
+
+    <div class="row" id="current-weather">
+      <div class="col s12" id="current-city">
+          <p id="temp"> Temp:</p>
+          <p id="wind"> Wind:</p>
+          <p id="humidity"> Humidity:</p>
+          <p> UV Index: <span id="indexUV"></span> </p>
+      </div>
+      </div>
+  </div>
+</div>
+<div class="col s12">
+  <div class="row">
+      <h4>
+          5-Day Forecast:
+      </h4>
+  </div>
+</div>
+<div class="row" id="cardDeck">
+<div class="col s2 card-panel grey lighten-5 z-depth-1 forecast"></div>
+<div class="col s2 card-panel grey lighten-5 z-depth-1 forecast"></div>
+<div class="col s2 card-panel grey lighten-5 z-depth-1 forecast"></div>
+<div class="col s2 card-panel grey lighten-5 z-depth-1 forecast"></div>
+<div class="col s2 card-panel grey lighten-5 z-depth-1 forecast"></div>
+</div>
+</div>
+</div>
+
+
+
 
     <div class="col-12 col-md-8">
       <h2 class="top-banner"> <span id="city-search-term"></span></h2>
