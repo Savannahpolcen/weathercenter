@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
   <link rel="stylesheet" href="./assets/stylesheet.css" />
   <title>WeatherCenter</title>
+  
 </head>
 
 <body class=" min-100-vh">
@@ -46,43 +47,59 @@
 
     <div class="row" id="current-weather">
       <div class="col s12" id="current-city">
-          <p id="temp"> Temp:</p>
-          <p id="wind"> Wind:</p>
-          <p id="humidity"> Humidity:</p>
-          <p> UV Index: <span id="indexUV"></span> </p>
+          <p class="current" id="temp"> Temp:</p>
+          <p class="current" id="wind"> Wind:</p>
+          <p class="current" id="humidity"> Humidity:</p>
+          <p> UV Index: <span id="uv-index"></span> </p>
       </div>
       </div>
   </div>
 </div>
-<div class="col s12">
-  <div class="row">
-      <h4>
-          5-Day Forecast:
-      </h4>
-  </div>
-</div>
-<div class="row" id="cardDeck">
-<div class="col s2 card-panel grey lighten-5 z-depth-1 forecast"></div>
-<div class="col s2 card-panel grey lighten-5 z-depth-1 forecast"></div>
-<div class="col s2 card-panel grey lighten-5 z-depth-1 forecast"></div>
-<div class="col s2 card-panel grey lighten-5 z-depth-1 forecast"></div>
-<div class="col s2 card-panel grey lighten-5 z-depth-1 forecast"></div>
-</div>
-</div>
-</div>
-
-
-
-
-    <div class="col-12 col-md-8">
-      <h2 class="top-banner"> <span id="city-search-term"></span></h2>
-      <div id="city-container" class="list-group">
-
-      </div>
+ <!-- 5 DAY FORECAST START-->
+ <div class="col-sm-12" id="future-weather">
+   <h4> 5 Day Forecast:</h4>
+      <div >
+        <div class="" >
+            <p id="fDate0"></p>
+            <p id="fImg0"></p>
+            <p>Temp:<span id="fTemp0"></span></p>
+            <p>Humidity:<span id="fHumidity0"></span></p>
+        </div>
+        <div class="" >
+            <p id="fDate1"></p>
+            <p id="fImg1"></p>
+            <p>Temp:<span id="fTemp1"></span></p>
+            <p>Humidity:<span id="fHumidity1"></span></p>
+        </div>
+        <div class="">
+            <p id="fDate2"></p>
+            <p id="fImg2"></p>
+            <p>Temp:<span id="fTemp2"></span></p>
+            <p>Humidity:<span id="fHumidity2"></span></p>
+        </div>
+        <div class="">
+            <p id="fDate3"></p>
+            <p id="fImg3"></p>
+            <p>Temp:<span id="fTemp3"></span></p>
+            <p>Humidity:<span id="fHumidity3"></span></p>
+        </div>
+        <div class="" >
+            <p id="fDate4"></p>
+            <p id="fImg4"></p>
+            <p>Temp:<span id="fTemp4"></span></p>
+            <p>Humidity:<span id="fHumidity4"></span></p>
+        </div>
     </div>
+ </div>
+</div>
+
+
+
   </main>
 
+  <script src="https://code.jquery.com/jquery.js"></script>
   <script src="./assets/script.js"></script>
+
 </body>
 
 </html>
