@@ -5,85 +5,90 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
   <link rel="stylesheet" href="./assets/stylesheet.css" />
   <title>WeatherCenter</title>
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
 
-<body class=" min-100-vh">
+<body class="Welcome">
   <header class="hero">
-    <h1 class="app-title"><i class=></i> Welcome to the WeatherCenter!</h1>
-    <p>
-    </p>
-  </header>
+    <h1> Welcome to the WeatherCenter!</h1>
+     </header>
 
 
-  <main class="flex-row justify-space-between">
-    <div class="col-12 col-md-4">
-      <div class="card">
-        <h3 class="card-header text-uppercase">Search for a city</h3>
+  <main>
+    <div class="col">
+      <div class="form-group">
+        <h3 class="card-header">Search for a city</h3>
         <form id="user-form" class="card-body">
         
           <input name="username" id="search-city" type="text" autofocus="true" class="form-input" />
+          <br>
           <button type="submit" class="btn" id="search-button">Search</button>
         </form>
       </div>
 
       <div class="card">
         
-        <div id="city-buttons" class="card-body">
-          <button cityName="Austin" class="btn">Austin</button>
-          <button cityName="Chicago" class="btn">Chicago</button>
-          <button cityName="New York" class="btn">New York</button>
-          <button cityName="Orlando" class="btn">Orlando</button>
-          <button cityName="San Francisco" class="btn">San Francisco</button>
-          <button cityName="Seattle" class="btn">Seattle</button>
-          <button cityName="Denver" class="btn">Denver</button>
+        <div id="city-buttons" class="btn-group-vertical">
+          <button cityName="Austin" class="btn btn-info btn-lg">Austin</button>
+          <button cityName="Chicago" class="btn btn-info btn-lg">Chicago</button>
+          <button cityName="New York" class="btn btn-info btn-lg">New York</button>
+          <button cityName="Orlando" class="btn btn-info btn-lg">Orlando</button>
+          <button cityName="San Francisco" class="btn btn-info btn-lg">San Francisco</button>
+          <button cityName="Seattle" class="btn btn-info btn-lg">Seattle</button>
+          <button cityName="Denver" class="btn btn-info btn-lg">Denver</button>
         </div>
       </div>
     </div>
 
-    <div class="row" id="current-weather">
-      <div class="col s12" id="current-city">
-          <p class="current" id="temp"> Temp:</p>
-          <p class="current" id="wind"> Wind:</p>
-          <p class="current" id="humidity"> Humidity:</p>
+
+    <div class="current" id="current-weather">
+      <div  id="current-city">
+          <p class="currentInfo" id="Temp"> Temp:</p>
+          <p class="currentInfo" id="wind"> Wind:</p>
+          <p class="currentInfo" id="humidity"> Humidity:</p>
           <p> UV Index: <span id="uv-index"></span> </p>
       </div>
       </div>
   </div>
 </div>
- <!-- 5 DAY FORECAST START-->
- <div class="col-sm-12" id="future-weather">
+ 
+
+
+<!-- 5 DAY FORECAST START-->
+ <div class="future" id="future-weather">
    <h4> 5 Day Forecast:</h4>
       <div >
-        <div class="" >
+        <div id="currentW" >
             <p id="fDate0"></p>
             <p id="fImg0"></p>
             <p>Temp:<span id="fTemp0"></span></p>
             <p>Humidity:<span id="fHumidity0"></span></p>
         </div>
-        <div class="" >
+        <div id="currentW">
             <p id="fDate1"></p>
             <p id="fImg1"></p>
             <p>Temp:<span id="fTemp1"></span></p>
             <p>Humidity:<span id="fHumidity1"></span></p>
         </div>
-        <div class="">
+        <div id="currentW">
             <p id="fDate2"></p>
             <p id="fImg2"></p>
             <p>Temp:<span id="fTemp2"></span></p>
             <p>Humidity:<span id="fHumidity2"></span></p>
         </div>
-        <div class="">
+        <div id="currentW">
             <p id="fDate3"></p>
             <p id="fImg3"></p>
             <p>Temp:<span id="fTemp3"></span></p>
             <p>Humidity:<span id="fHumidity3"></span></p>
         </div>
-        <div class="" >
+        <div id="currentW" >
             <p id="fDate4"></p>
             <p id="fImg4"></p>
             <p>Temp:<span id="fTemp4"></span></p>
