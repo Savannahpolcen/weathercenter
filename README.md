@@ -13,13 +13,20 @@ THEN I am presented with a 5-day forecast that displays the date, an icon repres
 WHEN I click on a city in the search history
 THEN I am again presented with current and future conditions for that city
 
-##Mockup Image 
-
-
-
-
+#Mockup Image 
 ![weatherMockup](https://user-images.githubusercontent.com/29647525/163910396-86c889c8-02b3-4d9d-8a77-4410d8e32aeb.png)
 
-
-
 The mockup image for weathercenter is located at "./assets/images/weatherMockup.png"
+
+# Sample Site
+The sample site for weathercenter is located at https://savannahpolcen.github.io/weathercenter/
+
+# GitHub repository 
+
+The repository for the weather center project is located at https://github.com/Savannahpolcen/weathercenter.
+
+# Future Development 
+This project was a complicated one for me. I struggled getting my head around the basis of the calls for individual buttons and even the layout for the site. So, in interest of furthur developments that I could work on in the future I would say location buttons, current day weather display as well as visual flow of the site. 
+
+---
+Savannah Polcen 
